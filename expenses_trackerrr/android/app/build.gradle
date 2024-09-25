@@ -1,0 +1,48 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" // Firebase plugin
+}
+
+android {
+    namespace = "com.example.expenses_trackerrr"
+    compileSdk = 33  // Güncel compileSdk versiyonu 33.
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.expenses_trackerrr"
+        minSdk = 21  // Firebase için minSdk genellikle 21.
+        targetSdk = 33
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    // Flutter ve Android gereksinimlerinin yanı sıra Firebase SDK eklemeleri
+    implementation platform('com.google.firebase:firebase-bom:32.1.0') // Firebase BOM
+    implementation 'com.google.firebase:firebase-analytics'  // Firebase Analytics
+    implementation 'com.google.firebase:firebase-firestore'   // Firebase Firestore
+}
+
+flutter {
+    source = "../.."
+}
+
+// Google Services eklentisini uygulamaya ekliyoruz.
+apply plugin: 'com.google.gms.google-services'

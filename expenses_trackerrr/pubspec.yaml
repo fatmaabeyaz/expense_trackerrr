@@ -1,0 +1,26 @@
+name: expense_tracker
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.3
+  firebase_auth: ^5.3.0 # En son sürüm
+  firebase_core: ^3.5.0 # En son sürüm
+  uuid: ^4.3.5
+  intl: ^0.19.0
+  cloud_firestore: ^5.4.2 # En son sürüm
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0 # En son sürüm
+
+flutter:
+  uses-material-design: true

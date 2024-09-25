@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "413688312212",
+    "project_id": "harcamauyg",
+    "storage_bucket": "harcamauyg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413688312212:android:76d7612e8f47cb40479f81",
+        "android_client_info": {
+          "package_name": "com.example.expenses_trackerrr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP1Ma0Xk89HywBTX13GyaOP1-DvHsswGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
